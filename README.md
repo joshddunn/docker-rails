@@ -18,7 +18,7 @@ password: password
 host: db
 ```
 
-To start the app run `docker-compose up --build`.
+To start the app run `docker-compose up --build`
 
 Finally, once the app is running you will have to create the database
 
