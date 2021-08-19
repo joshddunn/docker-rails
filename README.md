@@ -5,5 +5,5 @@ Usage
 Clone this repository and run
 
 ```
-docker-compose run app rails new .
+docker-compose run app rails new . --database=postgresql
 ```
