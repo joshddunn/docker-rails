@@ -1,14 +1,16 @@
-Docker Rails 🔥
+# Docker Rails 🔥
+
 This is an easy to use docker container for Ruby and Rails.
 
-Usage
+### Usage
+
 Clone this repository and run
 
 ```
 docker-compose run app rails new . --database=postgresql
 ```
 
-You will need to make a couple updates in `database.yml`.
+You will need to add the following to the `default` scope in `database.yml`
 
 ```
 username: postgres
@@ -18,7 +20,7 @@ host: db
 
 To start the app run `docker-compose up --build`.
 
-Once the app is running run
+Finally, once the app is running you will have to create the database
 
 ```
 docker-compose run app rails db:create
