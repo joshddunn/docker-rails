@@ -1,4 +1,4 @@
-FROM ruby:3.1.0
+FROM ruby:3.0.3
 
 RUN curl -fsSL https://deb.nodesource.com/setup_12.x | bash -
 
