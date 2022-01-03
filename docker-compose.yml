@@ -6,7 +6,7 @@ services:
       POSTGRES_PASSWORD: password
   app:
     build: .
-    command: commands/app
+    command: bash -i commands/app.sh
     env_file:
       .env
     volumes:
