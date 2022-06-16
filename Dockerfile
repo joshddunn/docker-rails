@@ -1,4 +1,4 @@
-FROM ruby:3.0.3
+FROM ruby:3.1.2
 
 # installs and uses jemalloc instead of the default memory allocator
 RUN apt-get update && apt-get install libjemalloc2
