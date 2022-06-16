@@ -4,7 +4,7 @@ FROM ruby:3.1.2
 RUN apt-get update && apt-get install libjemalloc2
 ENV LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libjemalloc.so.2
 
-# removes files related to apt
+# removes unnecessary files related to apt
 RUN rm -rf /var/lib/apt/lists/*
 
 RUN mkdir /myapp
